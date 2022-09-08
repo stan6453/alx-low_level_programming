@@ -1,8 +1,9 @@
 #include<stdio.h>
 
 /**
- * This is the main function.
- * all c programs start from here.
+ * main - Short description, single line
+ * Description: Longer description of the function)?
+ * Return: Description of the returned value
  */
 int main() {
 	int int_type;
