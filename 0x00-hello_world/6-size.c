@@ -1,5 +1,9 @@
 #include<stdio.h>
 
+/**
+ * This is the main function.
+ * all c programs start from here.
+ */
 int main() {
 	int int_type;
 	float float_type;
