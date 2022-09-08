@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * function_name - Short description, single line
+ * main - Short description, single line
  * Description: Longer description of the function)?
  * Return: Description of the returned value
  */
