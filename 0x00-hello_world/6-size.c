@@ -1,11 +1,12 @@
 #include<stdio.h>
 
 /**
- * main - Short description, single line
- * Description: Longer description of the function)?
- * Return: Description of the returned value
+ * main - program execution starts here
+ * Description: this is the main function
+ * Return: an integer to signify success or fail
  */
-int main() {
+int main(void)
+{
 	int int_type;
 	float float_type;
 	char char_type;
@@ -17,6 +18,5 @@ int main() {
 	printf("Size of a long int: %zu byte(s)\n", sizeof(long_int_type));
 	printf("Size of a long long int: %zu byte(s)\n", sizeof(long_long_int_type));
 	printf("Size of a float: %zu byte(s)\n", sizeof(float_type));
-	
 	return (0);
 }
