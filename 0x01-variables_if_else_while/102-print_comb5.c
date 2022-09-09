@@ -8,44 +8,36 @@
  */
 int main(void)
 {
-	int i, j, k, l, x_value, y_value, unique_combination, isunique;
+	int i, j;
+	int a, b, c, d;
 
-	for (i = '0'; i <= '9'; i++)
+	for (i = 0; i < 100; i++)
 	{
-		for (j = '0'; j <= '9'; j++)
-		{
-			for (k = '0'; k <= '9'; k++)
-			{
-				for (l = '0'; l <= '9'; l++)
-				{
-					/**
-					 * multiply the most significant value,
-					 *  so that is has more wight than the unit placeholder
-					 */
-					x_value = i * 10 + j;
-					y_value = k * 10 + l;
-					isunique = (i != k || j != l);
-					unique_combination = (x_value < y_value || i < k);
-					if (isunique && unique_combination)
-					{
-						putchar(i);
-						putchar(j);
-						putchar(' ');
-						putchar(k);
-						putchar(l);
+		a = i / 10;
+		b = i % 10;
 
-						if (i != '9' || j != '8' || k != '9' || l != '9')
-						{
-							putchar(',');
-							putchar(' ');
-						}
-					}
+		for (j = 0; j < 100; j++)
+		{
+			c = j / 10;
+			d = j % 10;
+
+			if (a < c || (a == c && b < d))
+			{
+				putchar(a + '0');
+				putchar(b + '0');
+				putchar(' ');
+				putchar(c + '0');
+				putchar(d + '0');
+
+				if (!(a == 9 && b == 8 && c == 9 && d == 9))
+				{
+					putchar(',');
+					putchar(' ');
 				}
 			}
+
 		}
 	}
-
 	putchar('\n');
-
 	return (0);
 }
