@@ -18,8 +18,12 @@ int main(void)
 			{
 				for (l = '0'; l <= '9'; l++)
 				{
-					x_value = i + j;
-					y_value = k + l;
+					/**
+					 * multiply the most significant value,
+					 *  so that is has more wight than the unit placeholder
+					 */
+					x_value = i * 10 + j;
+					y_value = k * 10 + l;
 					isunique = (i != k || j != l);
 					unique_combination = (x_value < y_value || i < k);
 					if (isunique && unique_combination)
