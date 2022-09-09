@@ -8,7 +8,7 @@
  */
 int main(void)
 {
-	int i, j, k, l, x_value, y_value, unique_conbination, isunique;
+	int i, j, k, l, x_value, y_value, unique_combination, isunique;
 
 	for (i = '0'; i <= '9'; i++)
 	{
@@ -21,8 +21,8 @@ int main(void)
 					x_value = i + j;
 					y_value = k + l;
 					isunique = (i != k && j != l);
-					unique_combination = (x_valuee < y_value || i < k);
-					if (isuniqu && unique_combination)
+					unique_combination = (x_value < y_value || i < k);
+					if (isunique && unique_combination)
 					{
 						putchar(i);
 						putchar(j);
