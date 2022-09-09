@@ -20,7 +20,7 @@ int main(void)
 				{
 					x_value = i + j;
 					y_value = k + l;
-					isunique = (i != k && j != l);
+					isunique = (i != k || j != l);
 					unique_combination = (x_value < y_value || i < k);
 					if (isunique && unique_combination)
 					{
