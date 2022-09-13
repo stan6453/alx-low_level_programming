@@ -1,6 +1,6 @@
 
 /**
- *sum - finds the sum of two numbers.
+ *add - finds the sum of two numbers.
  *@num1: first number to add
  *@num2: second number to add
  *Description: finds the sum of two numbers
