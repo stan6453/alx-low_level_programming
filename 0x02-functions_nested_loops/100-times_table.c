@@ -13,8 +13,8 @@ void print_times_table(int n)
 
 	if (n == 0)
 	{
-		printf("%d\n",0);
-		n=100;
+		printf("%d\n", 0);
+		n = 100;
 	}
 	if (n >= 0 &&  n <= 15)
 	{
@@ -26,10 +26,10 @@ void print_times_table(int n)
 				if (j != n)
 				{
 					product = i * j;
-					if (j != 0 )
+					if (j != 0)
 						printf("%4d,", product);
 					else
-						printf("%d,",product);
+						printf("%d,", product);
 				}
 				else
 					printf("%4d", i * j);
