@@ -7,17 +7,18 @@
  */
 int main(void)
 {
-	int prevfibonacci = 1;
-	int fibonacci = 2;
+	unsigned long int prevfibonacci = 1;
+	
+	unsigned long int fibonacci = 2;
 	int counter = 1;
-	int swap;
+	unsigned long int swap;
 
-	printf("%d\n%d\n", prevfibonacci, fibonacci);
+	printf("%lu, %lu, ", prevfibonacci, fibonacci);
 	while (counter <= 50)
 	{
 		swap = fibonacci;
 		fibonacci = fibonacci + prevfibonacci;
-		printf("%d\n", fibonacci);
+		printf("%lu, ", fibonacci);
 		prevfibonacci = swap;
 		counter++;
 	}
