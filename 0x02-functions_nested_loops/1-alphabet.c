@@ -3,7 +3,6 @@
 /**
  *print_alphabet - prints the alphabets from a - z
  *Description:prints the lower case letters of the english alphabets from a - z
- *Return: void
  */
 void print_alphabet(void)
 {
@@ -12,6 +11,7 @@ void print_alphabet(void)
 	while (alphabet <= 'z')
 	{
 		_putchar(alphabet);
+		alphabet++;
 	}
 	_putchar('\n');
 }
