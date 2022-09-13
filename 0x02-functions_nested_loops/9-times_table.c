@@ -18,7 +18,7 @@ void times_table(void)
 			product_x = product / 10;
 
 			if (product_x == 0)
-			{i
+			{
 				_putchar(' ');
 				_putchar(' ');
 				_putchar(product_y + '0');
