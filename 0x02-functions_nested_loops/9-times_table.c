@@ -19,8 +19,11 @@ void times_table(void)
 
 			if (product_x == 0)
 			{
-				_putchar(' ');
-				_putchar(' ');
+				if(j != 0)
+				{
+					_putchar(' ');
+					_putchar(' ');
+				}
 				_putchar(product_y + '0');
 			}
 			else
