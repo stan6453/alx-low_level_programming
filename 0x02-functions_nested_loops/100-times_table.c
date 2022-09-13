@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 
 /**
  *print_times_table - prints a multiplication table
