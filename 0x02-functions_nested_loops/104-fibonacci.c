@@ -7,20 +7,20 @@
  */
 int main(void)
 {
-	unsigned long int prevfibonacci = 1;
-	unsigned long int fibonacci = 2;
-	int counter = 4;
-	unsigned long int swap;
+	long double prevfibonacci = 1;
+	long double fibonacci = 2;
+	int counter = 3;
+	long double swap;
 
-	printf("%lu, %lu, ", prevfibonacci, fibonacci);
+	printf("%.0Lf, %.0Lf, ", prevfibonacci, fibonacci);
 	while (counter <= 98)
 	{
 		swap = fibonacci;
 		fibonacci = fibonacci + prevfibonacci;
 		if (counter != 98)
-			printf("%lu, ", fibonacci);
+			printf("%.0Lf, ", fibonacci);
 		else
-			printf("%lu", fibonacci);
+			printf("%.0Lf", fibonacci);
 		prevfibonacci = swap;
 		counter++;
 	}
