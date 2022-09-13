@@ -12,12 +12,12 @@ int main(void)
 	int counter = 1;
 	unsigned long int swap;
 
-	printf("%d, %d, ", prevfibonacci, fibonacci);
+	printf("%lu, %lu, ", prevfibonacci, fibonacci);
 	while (counter <= 98)
 	{
 		swap = fibonacci;
 		fibonacci = fibonacci + prevfibonacci;
-		printf("%d, ", fibonacci);
+		printf("%lu, ", fibonacci);
 		prevfibonacci = swap;
 		counter++;
 	}
