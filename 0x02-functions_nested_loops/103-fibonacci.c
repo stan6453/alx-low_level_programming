@@ -12,7 +12,7 @@ int main(void)
 	unsigned long int swap;
 	unsigned long int sumofeven = 0;
 
-	printf("%lu\n", sumofeven += 2);
+	sumofeven += 2;
 	while (fibonacci < 4000000)
 	{
 		swap = fibonacci;
@@ -20,9 +20,9 @@ int main(void)
 		if (fibonacci % 2 == 0)
 		{
 			sumofeven += fibonacci;
-			printf("%lu\n", sumofeven);
 		}
 		prevfibonacci = swap;
 	}
+	printf("%lu\n", sumofeven);
 	return (0);
 }
