@@ -20,10 +20,10 @@ void print_times_table(int n)
 				if (j != n)
 				{
 					product = i * j;
-					printf("%04d,", product);
+					printf("%4d,", product);
 				}
 				else
-					printf("%04d", i * j);
+					printf("%4d", i * j);
 			}
 			putchar('\n');
 		}
