@@ -27,8 +27,11 @@ void times_table(void)
 				_putchar(product_x + '0');
 				_putchar(product_y + '0');
 			}
-			_putchar(',');
-			_putchar(' ');
+			if (j != 9)
+			{
+				_putchar(',');
+				_putchar(' ');
+			}
 		}
 		_putchar('\n');
 	}
