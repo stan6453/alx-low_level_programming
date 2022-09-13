@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include <math.h>
 
 /**
  *main - program execution starts here
@@ -8,8 +7,6 @@
  */
 int main(void)
 {
-	long double floorl(long double x);
-
 	long double prevfibonacci = 1;
 	long double fibonacci = 2;
 	int counter = 3;
@@ -20,7 +17,7 @@ int main(void)
 	while (counter <= 98)
 	{
 		swap = fibonacci;
-		fibonacci = floorl(fibonacci + prevfibonacci);
+		fibonacci = fibonacci + prevfibonacci;
 		if (counter != 98)
 			printf("%.0Lf, ", fibonacci);
 		else
