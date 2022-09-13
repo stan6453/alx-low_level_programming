@@ -13,7 +13,7 @@ void print_times_table(int n)
 
 	if (n == 0)
 	{
-		printf("%d",0);
+		printf("%d\n",0);
 		n=100;
 	}
 	if (n >= 0 &&  n <= 15)
