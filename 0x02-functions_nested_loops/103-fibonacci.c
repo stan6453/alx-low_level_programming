@@ -9,16 +9,19 @@ void main(void)
 {
 	int prevfibonacci = 1;
 	int fibonacci = 2;
-	int counter = 1;
 	int swap;
+	int sumofeven = 0;
 
-	printf("%d\n%d\n", prevfibonacci, fibonacci);
-	while (counter <= 50)
+	printf("%d\n", sumofeven += 2);
+	while (fibonacci < 4000000)
 	{
 		swap = fibonacci;
 		fibonacci = fibonacci + prevfibonacci;
-		printf("%d\n", fibonacci);
+		if (fibonacci % 2 == 0)
+		{
+			sumofeven += fibonacci;
+			printf("%d\n", sumofeven);
+		}
 		prevfibonacci = swap;
-		counter++;
 	}
 }
