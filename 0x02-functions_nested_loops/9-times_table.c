@@ -1,3 +1,4 @@
+#include "main.h"
 
 /**
  *times_table - print the multiplication table
