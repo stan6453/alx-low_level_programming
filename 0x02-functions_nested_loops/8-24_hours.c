@@ -22,10 +22,10 @@ void jack_bauer(void)
 
 		for (minutes = 0; minutes < 60; minutes++)
 		{
-			minures_y = minutes % 10;
+			minutes_y = minutes % 10;
 			minutes_x = minutes / 10;
 
-			_putchar(hourse_x + '0');
+			_putchar(hours_x + '0');
 			_putchar(hours_y + '0');
 			_putchar(':');
 			_putchar(minutes_x + '0');
