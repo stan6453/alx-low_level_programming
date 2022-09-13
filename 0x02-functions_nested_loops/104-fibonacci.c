@@ -9,7 +9,7 @@ int main(void)
 {
 	unsigned long int prevfibonacci = 1;
 	unsigned long int fibonacci = 2;
-	int counter = 1;
+	int counter = 4;
 	unsigned long int swap;
 
 	printf("%lu, %lu, ", prevfibonacci, fibonacci);
@@ -17,7 +17,10 @@ int main(void)
 	{
 		swap = fibonacci;
 		fibonacci = fibonacci + prevfibonacci;
-		printf("%lu, ", fibonacci);
+		if (counter != 98)
+			printf("%lu, ", fibonacci);
+		else
+			printf("%lu", fibonacci);
 		prevfibonacci = swap;
 		counter++;
 	}
