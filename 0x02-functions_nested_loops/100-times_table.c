@@ -3,11 +3,12 @@
 /**
  *print_times_table - prints a multiplication table
  *@n: the end and size od the multiplication table
- *Description: prints an nxn multiplication table thta starts from 0 and stops at n
+ *Description: prints an nxn multiplication table
+ *that sitarts from 0 and stops at n
  */
 void print_times_table(int n)
 {
-	int i, j;
+	int i, j, product;
 
 	if (n >= 0 &&  n <= 15)
 	{
@@ -17,10 +18,20 @@ void print_times_table(int n)
 			{
 
 				if (j != n)
-					printf("%d, ", i * j);
+				{
+					product = i * j;
+					if (product < 10 && j != 0)
+					{
+						printf("  ");
+					}
+					else if (product >= 10 && product < 100 && j != 0)
+					{
+						printf(" ");
+					}
+					printf("%d, ", product);
+				}
 				else
 					printf("%d", i * j);
-				
 			}
 			putchar('\n');
 		}
