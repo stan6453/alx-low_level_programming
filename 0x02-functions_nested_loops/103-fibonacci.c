@@ -1,18 +1,18 @@
-
+#include <stdio.h>
 
 /**
  *main - program execution starts here
  *Description: this is the main function
  *Return: an integer to signify success or failure
  */
-void main(void)
+int main(void)
 {
-	int prevfibonacci = 1;
-	int fibonacci = 2;
-	int swap;
-	int sumofeven = 0;
+	unsigned long int prevfibonacci = 1;
+	unsigned long int fibonacci = 2;
+	unsigned long int swap;
+	unsigned long int sumofeven = 0;
 
-	printf("%d\n", sumofeven += 2);
+	printf("%lu\n", sumofeven += 2);
 	while (fibonacci < 4000000)
 	{
 		swap = fibonacci;
@@ -20,7 +20,7 @@ void main(void)
 		if (fibonacci % 2 == 0)
 		{
 			sumofeven += fibonacci;
-			printf("%d\n", sumofeven);
+			printf("%lu\n", sumofeven);
 		}
 		prevfibonacci = swap;
 	}
