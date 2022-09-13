@@ -19,7 +19,7 @@ void times_table(void)
 
 			if (product_x == 0)
 			{
-				if(j != 0)
+				if (j != 0)
 				{
 					_putchar(' ');
 					_putchar(' ');
