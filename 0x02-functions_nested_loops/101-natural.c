@@ -1,10 +1,10 @@
-
+#include <stdio.h>
 /**
  *main -program execution starts here
  *Description: prints all the multiples of 3 and 5 and the sums it.
- *Return: void
+ *Return: 1 or 0 to signify success or failuer
  */
-void main(void)
+int main(void)
 {
 	int counter, sum;
 
@@ -18,4 +18,6 @@ void main(void)
 		}
 	}
 	printf("%d\n", sum);
+
+	return (0);
 }
