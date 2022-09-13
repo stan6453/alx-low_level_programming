@@ -13,7 +13,6 @@ int main(void)
 	{
 		if (counter % 3 == 0 || counter % 5 == 0)
 		{
-			printf("%d\n", counter);
 			sum += counter;
 		}
 	}
