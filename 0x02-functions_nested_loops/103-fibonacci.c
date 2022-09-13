@@ -24,4 +24,5 @@ int main(void)
 		}
 		prevfibonacci = swap;
 	}
+	return (0);
 }
