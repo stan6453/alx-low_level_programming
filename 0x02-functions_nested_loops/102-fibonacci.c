@@ -1,11 +1,11 @@
-
+#include <stdio.h>
 
 /**
- *main - program execution starts here
- *Description: this is the main function
+ *main - prints the first 50 Fibonacci numbers
+ *Description: prints the first 50 Fibonacci numbers
  *Return: an integer to signify success or failure
  */
-void main(void)
+int main(void)
 {
 	int prevfibonacci = 1;
 	int fibonacci = 2;
@@ -21,4 +21,6 @@ void main(void)
 		prevfibonacci = swap;
 		counter++;
 	}
+
+	return (0);
 }
