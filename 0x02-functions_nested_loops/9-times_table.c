@@ -18,11 +18,14 @@ void times_table(void)
 			product_x = product / 10;
 
 			if (product_x == 0)
-			{
+			{i
+				_putchar(' ');
+				_putchar(' ');
 				_putchar(product_y + '0');
 			}
 			else
 			{
+				_putchar(' ');
 				_putchar(product_x + '0');
 				_putchar(product_y + '0');
 			}
