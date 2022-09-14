@@ -13,14 +13,16 @@
 
 
 int main(void)
-
 {
-	int i;
+	int answer = positive_or_negative(0);
 	
-	i = 0;
+	if (answer > 0)
+		printf("%d is positive", answer);
+	else if (answer < 0)
+		printf("%d is negative", answer);
+	else
+		printf("%d is zero", answer);
 
-	positive_or_negative(i);
-	
 	return (0);
 
 }
