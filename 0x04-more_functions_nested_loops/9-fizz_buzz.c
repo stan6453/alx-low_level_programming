@@ -33,4 +33,5 @@ int main(void)
 		if (number != 100)
 			putchar(' ');
 	}
+	putchar('\n');
 }
