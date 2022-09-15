@@ -38,12 +38,10 @@ void print_number(int n)
 	if (isnegative)
 		_putchar('-');
 	temp = n;
-	while (temp)
+	while (sigfig)
 	{
 		_putchar(temp / sigfig + '0');
 		temp = temp % sigfig;
 		sigfig = sigfig / 10;
 	}
-	if (n == 0)
-		_putchar('0');
 }
