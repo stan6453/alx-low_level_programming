@@ -18,7 +18,6 @@ void more_numbers(void)
 			if (tens)
 				_putchar(tens + '0');
 			_putchar(unit + '0');
-			
 		}
 		_putchar('\n');
 	}
