@@ -21,7 +21,7 @@ int main(void)
 			temp /= loop;
 			if (temp == 1)
 			{
-				printf("%d", loop);
+				printf("%lu", loop);
 				return (0);
 			}
 			loop = 1;
