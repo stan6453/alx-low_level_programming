@@ -10,7 +10,8 @@
  */
 void print_number(int n)
 {
-	int isnegative = 0, temp, sigfig = 0;
+	int isnegative = 0, temp;
+	unsigned int sigfig = 0;
 	int i, j;
 
 	if (n < 0)
