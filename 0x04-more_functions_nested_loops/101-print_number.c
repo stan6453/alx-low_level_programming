@@ -12,6 +12,7 @@
 void print_number(int n)
 {
 	int isnegative = 0, temp, sigfig = 0;
+	int i, j;
 
 	if (n < 0)
 	{
@@ -25,7 +26,14 @@ void print_number(int n)
 		sigfig++;
 	}
 	sigfig--;
-	sigfig = pow(10, sigfig);
+
+	j = sigfig;
+
+	sigfig = 1;
+	for (i = 1; i <= j; i++)
+	{
+		sigfig = sigfig * 10;
+	}
 
 	if (isnegative)
 		_putchar('-');
