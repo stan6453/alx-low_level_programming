@@ -13,7 +13,8 @@ int _atoi(char *s)
 	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
 		;
 	/* go back 1 char and check the sign*/
-	s--;
+	if(i > 0)
+		s--;
 	sign = (s[i] == '-') ? -1 : 1;
 
 	/*skip sign */
