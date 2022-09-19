@@ -11,5 +11,5 @@ void puts2(char *str)
 
 	for (index = 0; ((letter = str[index]) != '\n'); index += 2)
 		_putchar(letter);
-	putchar('\n');
+	_putchar('\n');
 }
