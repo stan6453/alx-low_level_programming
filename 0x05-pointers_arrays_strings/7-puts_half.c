@@ -14,7 +14,7 @@ void puts_half(char *str)
 		;
 
 	/*get the middle of the string*/
-	midstring = letter_count / 2;
+	midstring = (letter_count % 2) == 0 ? letter_count / 2: (letter_count / 2) - 1;
 
 	/*print from middle of sting to the end*/
 	for (letter_count--; midstring <= letter_count; midstring++)
