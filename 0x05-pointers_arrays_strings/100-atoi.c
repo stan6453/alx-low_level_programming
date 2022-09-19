@@ -7,7 +7,7 @@
  */
 int _atoi(char *s)
 {
-	int i, n, sign;
+	int i, n, sign = 1;
 
 	/* skip any character that is not a number*/
 	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
@@ -17,10 +17,8 @@ int _atoi(char *s)
 	{
 		i--;
 		sign = (s[i] == '-') ? -1 : 1;
+		i++
 	}
-	/*skip sign */
-	if (s[i] < '0' || s[i] > '9')
-		i++;
 	for (n = 0; s[i] >= '0' && s[i] <= '9'; i++)
 		n = 10 * n + (s[i] - '0');
 	return (sign * n);
