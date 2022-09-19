@@ -1,12 +1,16 @@
 #include "main.h"
 
-
+/**
+ * _puts - prints string to standard output
+ * @str: string to be printed
+ * Description: prints string to standard output
+ */
 void _puts(char *str)
 {
 	int i;
 
-	for(i = 0; i != '\0'; i++)
+	for (i = 0; i != '\0'; i++)
 		_putchar(str[i]);
-	putchar('\n');
-	
+	_putchar('\n');
+
 }
