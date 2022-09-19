@@ -17,7 +17,7 @@ void puts_half(char *str)
 	midstring = (letter_count - 1) / 2;
 
 	/*print from middle of sting to the end*/
-	for (letter_count--; midsting <= letter_count; midstring++)
+	for (letter_count--; midstring <= letter_count; midstring++)
 		_putchar(str[midstring]);
 	putchar('\n');
 }
