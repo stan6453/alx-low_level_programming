@@ -9,9 +9,11 @@ int _atoi(char *s)
 {
 	int i, n, sign;
 
-	/* skip white space*/
-	for (i = 0; s[i] == ' '; i++)
+	/* skip any character that is not a number*/
+	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
 		;
+	/* go back 1 char and check the sign*/
+	s--;
 	sign = (s[i] == '-') ? -1 : 1;
 
 	/*skip sign */
