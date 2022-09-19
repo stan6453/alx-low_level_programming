@@ -11,7 +11,9 @@ int _atoi(char *s)
 
 	/* skip any character that is not a number*/
 	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
-		;
+	{
+		if (s[i] == '\0') return (0);
+	}
 	/* go back 1 char and check the sign*/
 	if(i > 0)
 	{
