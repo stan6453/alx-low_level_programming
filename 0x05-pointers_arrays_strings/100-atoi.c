@@ -14,11 +14,11 @@ int _atoi(char *s)
 		;
 	/* go back 1 char and check the sign*/
 	if(i > 0)
-		s--;
+		i--;
 	sign = (s[i] == '-') ? -1 : 1;
 
 	/*skip sign */
-	if (s[i] == '+' || s[i] == '-')
+	if (s[i] == '+' || s[i] == '-'i)
 		i++;
 	for (n = 0; s[i] >= '0' && s[i] <= '9'; i++)
 		n = 10 * n + (s[i] - '0');
