@@ -12,7 +12,7 @@ void rev_string(char *s)
 	/*get length of string*/
 	for (letter_count = 0; s[letter_count] != '\0'; letter_count++)
 		;
-	/* swap letters from the ends to the middle*/
+	/* swap letters from both ends till you get to the middle*/
 	for (left_index = 0, letter_count--; left_index < letter_count;
 			left_index++, letter_count--)
 	{

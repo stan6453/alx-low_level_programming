@@ -10,7 +10,7 @@ void puts_half(char *str)
 	int letter_count, midstring;
 
 	/*get length of string*/
-	for (letter_count = 0; s[letter_count] != '\0'; letter_count++)
+	for (letter_count = 0; str[letter_count] != '\0'; letter_count++)
 		;
 
 	/*get the middle of the string*/
