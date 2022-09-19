@@ -17,14 +17,8 @@ int _atoi(char *s)
 		if (s[i] == '-')
 			no_of_dash++;
 	}
-	/* go back 1 char and check the sign*/
-	if(i > 0)
-	{
-		i--;
-		sign = (s[i] == '-') ? -1 : 1;
-		sign = (no_of_dash % 2 == 0) ? 1 : sign;
-		i++;
-	}
+	
+	sign = (no_of_dash % 2 == 0) ? 1 : -1;
 	for (n = 0; s[i] >= '0' && s[i] <= '9'; i++)
 		n = 10 * n + (s[i] - '0');
 	return (sign * n);
