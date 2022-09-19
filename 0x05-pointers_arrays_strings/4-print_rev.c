@@ -13,7 +13,7 @@ void print_rev(char *s)
 	for (letter_count = 0; s[letter_count] != '\0'; letter_count++)
 		;
 	/* print string in reverse */
-	for (; letter_count >= 0; letter_count--)
+	for (letter_count--; letter_count >= 0; letter_count--)
 		_putchar(s[letter_count]);
 	_putchar('\n');
 
