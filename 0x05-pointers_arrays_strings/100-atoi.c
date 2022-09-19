@@ -7,18 +7,22 @@
  */
 int _atoi(char *s)
 {
-	int i, n, sign = 1;
+	int i, n, sign = 1, no_of_dash = 0;
 
 	/* skip any character that is not a number*/
 	for (i = 0; s[i] < '0' || s[i] > '9'; i++)
 	{
-		if (s[i] == '\0') return (0);
+		if (s[i] == '\0')
+			return (0);
+		if (s[i] == '-')
+			no_of_dash++;
 	}
 	/* go back 1 char and check the sign*/
 	if(i > 0)
 	{
 		i--;
 		sign = (s[i] == '-') ? -1 : 1;
+		sign = (no_of_dash % 2 == 0) ? 1 : sign;
 		i++;
 	}
 	for (n = 0; s[i] >= '0' && s[i] <= '9'; i++)
