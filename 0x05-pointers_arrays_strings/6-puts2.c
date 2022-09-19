@@ -7,9 +7,13 @@
  */
 void puts2(char *str)
 {
-	int index, letter;
+	int index, letter_count;
 
-	for (index = 0; ((letter = str[index]) != '\n'); index += 2)
-		_putchar(letter);
+	/*get length of string*/
+	for (letter_count = 0; s[letter_count] != '\0'; letter_count++)
+		;
+	/*print the array elements*/
+	for (index = 0; index < letter_count; index += 2)
+		_putchar(str[index]);
 	_putchar('\n');
 }
