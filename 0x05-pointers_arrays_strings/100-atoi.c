@@ -14,9 +14,10 @@ int _atoi(char *s)
 		;
 	/* go back 1 char and check the sign*/
 	if(i > 0)
+	{
 		i--;
-	sign = (s[i] == '-') ? -1 : 1;
-
+		sign = (s[i] == '-') ? -1 : 1;
+	}
 	/*skip sign */
 	if (s[i] == '+' || s[i] == '-')
 		i++;
