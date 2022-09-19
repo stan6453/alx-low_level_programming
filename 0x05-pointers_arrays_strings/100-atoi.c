@@ -19,7 +19,7 @@ int _atoi(char *s)
 		sign = (s[i] == '-') ? -1 : 1;
 	}
 	/*skip sign */
-	if (s[i] == '+' || s[i] == '-')
+	if (s[i] < '0' || s[i] > '9')
 		i++;
 	for (n = 0; s[i] >= '0' && s[i] <= '9'; i++)
 		n = 10 * n + (s[i] - '0');
