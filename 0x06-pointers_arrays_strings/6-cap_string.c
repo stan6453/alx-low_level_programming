@@ -14,12 +14,12 @@ char *cap_string(char *str)
 		if(ch >='a' && ch <='z' && prev_space)
 		{
 			str[i] = ch + 32;
-			prev_scape = 0;
+			prev_space = 0;
 		}
 		else if (ch != '\n' && ch != ' ' && ch != '\t' && prev_space)
 		{
 			prev_space = 0;
 		}
-		i++	
+		i++;
 	}
 }
