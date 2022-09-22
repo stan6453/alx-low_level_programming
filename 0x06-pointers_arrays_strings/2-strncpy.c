@@ -1,8 +1,8 @@
 
 /**
  * _strncpy - multiplies two digits
- * @dest 1st digit in the multiplication
- * @src 1st digit in the multiplication
+ * @dest: 1st digit in the multiplication
+ * @src: 1st digit in the multiplication
  * @n: 2nd digit to be multiplied
  * Description: multiplies two digits
  * Return: the result of the multiplication
