@@ -22,7 +22,7 @@ char *cap_string(char *str)
 			prev_space = 0;
 		}
 		else if (ch != '\n' && ch != ' ' && ch != '\t' &&
-			       	ch != '.' && prev_space)
+				ch != '.' && prev_space)
 		{
 			prev_space = 0;
 		}
