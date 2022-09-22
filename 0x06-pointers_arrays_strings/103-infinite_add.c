@@ -8,19 +8,15 @@
  * Description: multiplies two digits
  * Return: the result of the multiplication
  */
-char *infinite_add(char *n1, char *n2, char *r, int size_r)
+char *infinite_add(char *n1, char *n2,
+		char *r, int size_r)
 {
-	int fnum, snum, sum, base, rem, n1length, n2length;
+	int fnum, snum, sum, base, rem = 0, n1length = 0, n2length = 0;
 
-	/*find length of n1 and n2*/
-	n1length = 0;
-	while (n1[++n1length] != '\0')
-		;
-	n2length = 0;
-	while (n2[++n2length] != '\0')
-		;
-	/*add number starting from last index*/
-	rem = 0;
+	while (n1[++n1length] != '\0');
+	n1length--;
+	while (n2[++n2length] != '\0');
+	n2length--;
 	size_r--;
 	while (n1length >= 0 || n2length >= 0)
 	{
@@ -34,24 +30,22 @@ char *infinite_add(char *n1, char *n2, char *r, int size_r)
 			snum = n2[n2length] - '0';
 		else
 			snum = 0;
-		sum = fnum + snum;
+		sum = fnum + snum + rem;
 		if (sum > 9)
 		{
 			base = sum % 10;
-			r[size_r] = (base + rem) + '0';
+			r[size_r] = base + '0';
 			rem = sum / 10;
 		}
 		else
 		{
 			base = sum;
-			r[size_r] = (base + rem) + '0';
+			r[size_r] = base + '0';
 			rem = 0;
 		}
-
 		size_r--;
 		n1length--;
 		n2length--;
 	}
-
 	return (r);
 }
