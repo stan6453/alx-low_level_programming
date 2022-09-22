@@ -21,7 +21,8 @@ char *cap_string(char *str)
 			str[i] = ch - 32;
 			prev_space = 0;
 		}
-		else if (ch != '\n' && ch != ' ' && ch != '\t' && prev_space)
+		else if (ch != '\n' && ch != ' ' && ch != '\t' &&
+			       	ch != '.' && prev_space)
 		{
 			prev_space = 0;
 		}
