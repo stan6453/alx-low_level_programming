@@ -1,0 +1,25 @@
+
+
+
+char *cap_string(char *str)
+{
+	int i, ch, prev_space = 0;
+
+	i = 0;
+	while(str[i] != '\0')
+	{
+		ch = str[i];
+		if(ch == '\n' || ch == ' ' || ch == '\t' )
+			prev_space = 1;
+		if(ch >='a' && ch <='z' && prev_space)
+		{
+			str[i] = ch + 32;
+			prev_scape = 0;
+		}
+		else if (ch != '\n' && ch != ' ' && ch != '\t' && prev_space)
+		{
+			prev_space = 0;
+		}
+		i++	
+	}
+}
