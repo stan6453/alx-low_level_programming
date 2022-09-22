@@ -1,10 +1,5 @@
 #include <stdio.h>
 
-/**
-* main - multiplies two digits
-* Description: multiplies two digits
-* Return: the result of the multiplication
-*/
 int main(void)
 {
 	int n;
