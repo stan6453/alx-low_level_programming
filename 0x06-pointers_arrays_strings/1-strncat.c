@@ -10,5 +10,5 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	while ((dest[i++] = src[j++]) != '\0' && j-1 !=  n) /* copy src */
 		;
-
+	return dest;
 }
