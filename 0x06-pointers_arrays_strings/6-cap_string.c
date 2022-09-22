@@ -14,7 +14,7 @@ char *cap_string(char *str)
 	while (str[i] != '\0')
 	{
 		ch = str[i];
-		if (ch == '\n' || ch == ' ' || ch == '\t')
+		if (ch == '\n' || ch == ' ' || ch == '\t' || ch == '.')
 			prev_space = 1;
 		if (ch >= 'a' && ch <= 'z' && prev_space)
 		{
