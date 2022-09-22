@@ -10,11 +10,11 @@
  */
 char *infinite_add(char *n1, char *n2, char *r, int size_r)
 {
-	int fnum, snum, sum, base, rem, n1length, n2length, i;
+	int fnum, snum, sum, base, rem, n1length, n2length;
 
 	/*find length of n1 and n2*/
 	n1length = 0;
-	while (n1[++n1legth] != '\0')
+	while (n1[++n1length] != '\0')
 		;
 	n2length = 0;
 	while (n2[++n2length] != '\0')
