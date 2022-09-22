@@ -1,5 +1,11 @@
 
-
+/**
+ * _strcat - multiplies two digits
+ * @n: 1st digit in the multiplication
+ * @n: 2nd digit to be multiplied
+ * Description: multiplies two digits
+ * Return: the result of the multiplication
+ */
 char *_strcat(char *dest, char *src)
 {
 	int i, j;
