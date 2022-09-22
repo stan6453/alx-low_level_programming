@@ -1,6 +1,11 @@
 
 
-
+/**
+ * cap_string - multiplies two digits
+ * @str: 1st digit in the multiplication
+ * Description: multiplies two digits
+ * Return: the result of the multiplication
+ */
 char *cap_string(char *str)
 {
 	int i, ch, prev_space = 0;
