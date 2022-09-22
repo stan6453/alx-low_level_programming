@@ -16,6 +16,7 @@ char *rot13(char *str)
 
 		if (str[i] > 'z')
 			str[i] = str[((str[i] - 'z') + 'a') - 1];
+		i++;
 	}
-	return(str)
+	return(str);
 }
