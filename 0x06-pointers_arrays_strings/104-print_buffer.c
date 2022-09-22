@@ -5,7 +5,7 @@
  * @b: 1st digit in the multiplication
  * Description: multiplies two digits
  */
-void print_buffer(char *b, int size);
+void print_buffer(char *b, int size)
 {
 
 }
