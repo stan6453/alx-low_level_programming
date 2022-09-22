@@ -47,5 +47,9 @@ char *infinite_add(char *n1, char *n2,
 		n1length--;
 		n2length--;
 	}
+	if(size_r < 0 && rem)
+		return(0);
+	else if (size_r >=0 && rem)
+		r[size_r] = rem;
 	return (r);
 }
