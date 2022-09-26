@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 /**
  * _strspn - multiplies two digits
  * @s: 1st digit in the multiplication
