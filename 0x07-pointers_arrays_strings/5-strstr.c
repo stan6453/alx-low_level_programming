@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 /**
  * _strstr - multiplies two digits
  * @haystack: 1st digit in the multiplication
