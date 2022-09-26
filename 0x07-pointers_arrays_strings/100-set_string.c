@@ -7,7 +7,6 @@
  * Description: multiplies two digits
  * Return: the result of the multiplication
  */
-
 void set_string(char **s, char *to)
 {
 	while ((**s++ = *to++) !=  '\0')
