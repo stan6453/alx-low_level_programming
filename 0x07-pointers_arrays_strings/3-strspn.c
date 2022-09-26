@@ -18,7 +18,7 @@ unsigned int _strspn(char *s, char *accept)
 			{
 				insub = 1;
 				break;
-			{
+			}
 			else
 				insub = 0;
 		}
