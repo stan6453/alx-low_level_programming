@@ -8,9 +8,8 @@
  */
 int find_square(int n, int num)
 {
-	
 	if (num * num == n)
-		return num;
+		return (num);
 	if (num * num > n)
 		return (-1);
 	return (find_square(n, ++num));
@@ -25,6 +24,5 @@ int find_square(int n, int num)
  */
 int _sqrt_recursion(int n)
 {
-	
 	return (find_square(n, 1));
 }
