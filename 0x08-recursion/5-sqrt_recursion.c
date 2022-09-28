@@ -8,19 +8,19 @@ int num = 0;
  */
 int _sqrt_recursion(int n)
 {
-    int temp;
+	int temp;
 
-    num++;
-    if (num == n - 1 || n < 0)
-    {
-        num = 0;
-        return (-1);
-    }
-    if (num * num == n)
-    {
-        temp = num;
-        num = 0;
-        return (temp);
-    }
-    return (_sqrt_recursion(n));
+	num++;
+	if (num == n - 1 || n < 0)
+	{
+		num = 0;
+		return (-1);
+	}
+	if (num * num == n)
+	{
+		temp = num;
+		num = 0;
+		return (temp);
+	}
+	return (_sqrt_recursion(n));
 }
