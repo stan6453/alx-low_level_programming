@@ -7,7 +7,7 @@
  * Description: multiplies two digits
  * Return: the result of the multiplication
  */
-int find_prime(n, num)
+int find_prime(int n, int num)
 {
 	if (num == n)
 		return (1);
