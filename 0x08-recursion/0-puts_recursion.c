@@ -1,4 +1,4 @@
-
+#include <stdio.h>
 /**
  * _puts_recursion - multiplies two digits
  * @s: 1st digit in the multiplication
