@@ -15,4 +15,8 @@ void set_string(char **s, char *to)
 	{
 		*((*s) + i) = *(to + i);
 	}
+	if (*((*s) + i) != '\0')
+	{
+		*((*s) + i) = '\0';
+	}
 }
