@@ -11,7 +11,7 @@ void set_string(char **s, char *to)
 {
 	int i;
 
-	for (i = 0; *((*s) +i) != '\0' && *(to + 1) != '\0'; i++)
+	for (i = 0; *((*s) + i) != '\0' && *(to + 1) != '\0'; i++)
 	{
 		*((*s) + i) = *(to + i);
 	}
