@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
- *  int _strlen_recursion - multiplies two digits
+ * _strlen_recursion - multiplies two digits
  * @s: 1st digit in the multiplication
  * Description: multiplies two digits
  * Return: the result of the multiplication
