@@ -1,5 +1,5 @@
 
-
+int num = 0;
 /**
  * _sqrt_recursion - multiplies two digits
  * @n: 1st digit in the multiplication
@@ -9,7 +9,6 @@
 int _sqrt_recursion(int n)
 {
     int temp;
-    static int num = 0;
 
     num++;
     if (num == n - 1 || n < 0)
