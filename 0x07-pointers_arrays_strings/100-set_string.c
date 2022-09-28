@@ -9,6 +9,6 @@
  */
 void set_string(char **s, char *to)
 {
-	while ((**s++ = *to++) !=  '\0')
-		;
+	*s[0] = to[0];
+		
 }

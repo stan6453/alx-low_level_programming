@@ -12,12 +12,13 @@ void print_diagsums(int *a, int size)
 
 	/*print first diagonal*/
 	for (i = 0; i < size; i++)
-		sum += a[i][i];
+		sum += *(a + ((size * i) + i));
 	printf("%d, ", sum);
 
 	/*print the second diagonal*/
 	sum = 0;
 	for (i = 0, j = size - 1; i < size && j >= 0; i++,j--)
-		sum += a[i][j];
-	printf("%d", sum);
+		sum += *(a + ((size * i) + j));
+	printf("%d\n", sum);
+	
 }
