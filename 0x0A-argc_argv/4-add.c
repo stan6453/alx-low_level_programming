@@ -7,15 +7,15 @@
  * Description: adds a list of numbers
  * Return: 0 or 1
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
 	int i, sum = 0;
 
 	for (i = 1; i < argc; i++)
 	{
-		if (!isdigit(argv[i][1]))
+		if (!isdigit(argv[i][0]))
 		{
-			puts("Error\n");
+			printf("Error\n");
 			return (1);
 		}
 		sum += atoi(argv[i]);
