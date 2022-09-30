@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
 	(void) argc;
 	for (i = 1; i < 3; i++)
 	{
-		if (argc !== 3)
+		if (argc != 3)
 		{
 			puts("Error\n");
 			return (1);
