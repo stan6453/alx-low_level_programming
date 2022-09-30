@@ -7,20 +7,21 @@
  * Description: adds two numbers
  * Return: 0 or 1
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	int i, sum = 0;
+	int i, product = 1;
 
+	(void) argc;
 	for (i = 1; i < 3; i++)
 	{
-		if (arg[i] == NULL)
+		if (argv[i] == NULL)
 		{
 			puts("Error\n");
 			return (1);
 		}
-		sum += (int) argv[i];
+		product *= atoi(argv[i]);
 	}
-	printf("%d\n", sum);
+	printf("%d\n", product);
 	return (0);
 }
 
