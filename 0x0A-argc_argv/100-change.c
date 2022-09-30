@@ -7,24 +7,24 @@
  * Description: prints the minimun number of change
  * Return: 0 or 1
  */
-int main(int argc, char* argv[])
+int main(int argc, char *argv[])
 {
-	int reg = {25, 10, 5, 2, 1};
-	int cent = atio(argv[1]);
+	int reg[] = {25, 10, 5, 2, 1};
+	int cent;
 	int num = 0;
 	int i;
 
 	if (argc != 2)
 	{
-		puts("Error\n");
+		printf("Error\n");
 		return (1);
 	}
+	cent = atoi(argv[1]);
 	if (cent < 0)
 	{
-		puts("0\n");
+		printf("0\n");
 		return (0);
 	}
-
 	for (i = 0; i < 5 && cent; i++)
 	{
 		if (!((cent - reg[i]) < 0))
