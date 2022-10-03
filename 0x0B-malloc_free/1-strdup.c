@@ -25,5 +25,5 @@ char *_strdup(char *str)
 	{
 		mem[i] = str[i];
 	}
-	return mem;
+	return (mem);
 }
