@@ -10,6 +10,7 @@ char *create_array(unsigned int size, char c)
 {
 	char *mem, *head;
 
+	if (!size) return (NULL);
 	mem = (char *) malloc(size);
 	head = mem;
 	while (size > 0)
