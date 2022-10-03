@@ -10,8 +10,11 @@ char *create_array(unsigned int size, char c)
 {
 	char *mem, *head;
 
-	if (!size) return (NULL);
+	if (!size)
+		return (NULL);
 	mem = (char *) malloc(size);
+	if (mem == NULL)
+		return (NULL);
 	head = mem;
 	while (size > 0)
 	{
