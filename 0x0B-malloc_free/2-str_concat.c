@@ -5,9 +5,10 @@
  * Description: finds length of a string (not including null character)
  * Return: length of string
  */
-int _str_len(char *str){
+int _str_len(char *str)
+{
 	int i;
-	
+
 	for (i = 0; str[i] != '\0'; i++)
 		i++;
 	return (i);
@@ -28,15 +29,15 @@ char *str_concat(char *s1, char *s2)
 	/*find length of s1 and s2*/
 	i = _str_len(s1);
 	j = _str_len(s2);
-	mem = (char *)malloc(i+j+1);
+	mem = (char *)malloc(i + j + 1);
 	if (mem == NULL)
 		return (NULL);
 	/*copy strings from s1 to mem*/
 	for (i = 0; s1[i] != '\0'; i++)
 		mem[i] = s1[i];
 	/*copy srings from s2 to mem*/
-	for (j = 0; s2[j] != '\0'; j++,i++)
-		mem[i] = mem[j];
-	mem[i]='\0';
+	for (j = 0; s2[j] != '\0'; j++, i++)
+		mem[i] = s2[j];
+	mem[i] = '\0';
 	return (mem);
 }
