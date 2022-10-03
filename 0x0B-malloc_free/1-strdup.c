@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 /**
  * _strdup - multiplies two digits
  * @str: 1st digit in the multiplication
