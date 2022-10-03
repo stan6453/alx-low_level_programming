@@ -14,7 +14,7 @@ char *_strdup(char *str)
 		return (NULL);
 	/*find length of str*/
 	for (i = 0; str[i] != '\0'; i++)
-		i++;
+		;
 
 	mem = (char *) malloc(i + 1);
 	if (mem == NULL)
