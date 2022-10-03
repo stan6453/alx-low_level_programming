@@ -14,7 +14,8 @@ char *create_array(unsigned int size, char c)
 	head = mem;
 	while (size > 0)
 	{
-		(*mem)++ = c;
+		*mem = c;
+		mem++;
 		size--;
 	}
 	return (head);
