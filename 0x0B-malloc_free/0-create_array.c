@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 /**
  * create_array - multiplies two digits
  * @size: 1st digit in the multiplication
