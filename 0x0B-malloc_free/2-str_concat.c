@@ -1,4 +1,4 @@
-
+#include <stdlib.h>
 /**
  * _str_len - finds length of a string
  * @str: string to find its length
