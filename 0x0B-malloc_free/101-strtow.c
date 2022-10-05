@@ -13,14 +13,16 @@ char **strtow(char *str)
 	int i, j, instr = 0;
 
 	/*dummy usage*/
-	character = 'd';
-	**str_arr = malloc(20);
+	*character = 'd';
+	**str_arr =(char **) malloc(20);
+	instr = 1;
+
 	if (str == NULL || *str == "")
 		return (NULL);
 
 	for (i = 0; str[i] != '\0'; i++)
 	{
-
+		
 	}
 	return (str_arr);
 }
