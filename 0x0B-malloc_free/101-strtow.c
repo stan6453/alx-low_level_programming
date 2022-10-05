@@ -72,7 +72,7 @@ char **strtow(char *str)
 			str++;
 
 		str_len = _str_len(str);
-		str_arr[i] = (char *)malloc(sizeof(char) * str_len);
+		str_arr[i] = (char *)malloc(sizeof(char) * str_len + 1);
 
 		for (j = 0; j < str_len; j++)
 		{
