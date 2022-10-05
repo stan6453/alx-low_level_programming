@@ -36,10 +36,10 @@ char *str_concat(char *s1, char *s2)
 	if (mem == NULL)
 		return (NULL);
 	/*copy strings from s1 to mem*/
-	for (i = 0; s1[i] != '\0'; i++)
+	for (i = 0; s1[i] != '\0' && s1 != NULL; i++)
 		mem[i] = s1[i];
 	/*copy srings from s2 to mem*/
-	for (j = 0; s2[j] != '\0'; j++, i++)
+	for (j = 0; s2[j] != '\0' && s2 != NULL; j++, i++)
 		mem[i] = s2[j];
 	mem[i] = '\0';
 	return (mem);
