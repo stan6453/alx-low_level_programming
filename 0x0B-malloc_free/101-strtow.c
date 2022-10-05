@@ -80,7 +80,6 @@ char **strtow(char *str)
 			str++;
 		}
 		str_arr[i][str_len] = '\0';
-		str++;
 	}
 
 	return (str_arr);
