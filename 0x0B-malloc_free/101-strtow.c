@@ -55,10 +55,10 @@ int _word_count(char *str)
  */
 char **strtow(char *str)
 {
-	char *character, **str_arr;
-	int i, j, str_len, word_count, instr = 0;
+	char **str_arr;
+	int i, j, str_len, word_count;
 
-	if (str == NULL || str == "")
+	if (str == NULL || *str == '\0')
 		return (NULL);
 
 	word_count = _word_count(str);
