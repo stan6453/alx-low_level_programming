@@ -38,7 +38,7 @@ char *argstostr(int ac, char **av)
 		str_len += _str_len(av[i]);
 		str_len++; /*for the new line characters*/
 	}
-	str = malloc(srt_len + 1);
+	str = malloc(str_len + 1);
 	head = str;
 	for (i = 0; i < ac; i++)
 	{
