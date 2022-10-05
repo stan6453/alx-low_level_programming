@@ -12,7 +12,10 @@ char **strtow(char *str)
 	char *character, **str_arr;
 	int i, j, instr = 0;
 
-	if (str == NULL || str == "")
+	/*dummy usage*/
+	character = 'd';
+	**str_arr = malloc(20);
+	if (str == NULL || *str == "")
 		return (NULL);
 
 	for (i = 0; str[i] != '\0'; i++)
