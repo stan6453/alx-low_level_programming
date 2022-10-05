@@ -79,8 +79,8 @@ char **strtow(char *str)
 			str_arr[i][j] = *str;
 			str++;
 		}
-		str[i][str_len] = '\0';
-		str++
+		str_arr[i][str_len] = '\0';
+		str++;
 	}
 
 	return (str_arr);
