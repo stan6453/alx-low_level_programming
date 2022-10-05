@@ -39,7 +39,7 @@ char *str_concat(char *s1, char *s2)
 	for (i = 0; s1[i] != '\0' && s1 != NULL; i++)
 		mem[i] = s1[i];
 	/*copy srings from s2 to mem*/
-	for (j = 0; s2[j] != '\0' && s2 != NULL; j++, i++)
+	for (j = 0; s2[j] != '\0' && s2 != NULL ; j++, i++)
 		mem[i] = s2[j];
 	mem[i] = '\0';
 	return (mem);
