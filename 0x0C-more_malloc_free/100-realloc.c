@@ -1,6 +1,4 @@
-
-
-
+#include "main.h"
 
 /**
  * _realloc - multiplies two digits
@@ -13,10 +11,10 @@
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
 	unsigned int i;
-	void *new_ptr;
+	char *new_ptr;
 
-	if (ptr == NULL)
-		ptr = malloc(new_size);
+	char *ptr2 = ptr;
+
 	if (new_size == old_size)
 		return (ptr);
 	if (new_size == 0)
@@ -25,14 +23,14 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 		return (NULL);
 	}
 
-	new_ptr = malloc(new_size);
+	new_ptr = (char *) malloc(new_size);
 	if (ptr == NULL)
 		return (NULL);
 
 	/*copy from old_size to new_size*/
-	for (int i = 0; i < new_size && i < old_size; i++)
+	for (i = 0; i < new_size && i < old_size; i++)
 	{
-		new_ptr[i] = ptr[i]
+		new_ptr[i] = ptr2[i];
 	}
 	free(ptr);
 	return (new_ptr);
