@@ -1,5 +1,5 @@
 #include <stdlib.h>
-
+int _putchar(char c);
 /**
  * printerror - prints Error
  * Description: prints Error
