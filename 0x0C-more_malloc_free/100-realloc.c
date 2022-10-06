@@ -4,7 +4,7 @@
  * _realloc - multiplies two digits
  * @ptr: 1st digit in the multiplication
  * @old_size: 1st digit in the multiplication
-  @new_size: 1st digit in the multiplication
+ * @new_size: 1st digit in the multiplication
  * Description: multiplies two digits
  * Return: the result of the multiplication
  */
