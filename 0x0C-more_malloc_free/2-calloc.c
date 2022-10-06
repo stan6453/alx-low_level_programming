@@ -1,5 +1,4 @@
-
-
+#include "main.h"
 
 /**
  * _calloc - multiplies two digits
@@ -11,7 +10,7 @@
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
 	unsigned long int all_size, i;
-	void *ptr;
+	char *ptr;
 
 	if (nmemb == 0 || size == 0)
 		return (NULL);
