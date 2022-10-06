@@ -1,6 +1,4 @@
-
-
-
+#include "main.h"
 
 /**
  * string_nconcat - multiplies two digits
@@ -20,7 +18,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		n = strlen(s2);
 	size = strlen(s1) + n + 1;
 	ptr = malloc(size);
-	if (ptr == NULl)
+	if (ptr == NULL)
 		return (NULL);
 
 	for (i = 0; s1[i] != '\0'; i++)
