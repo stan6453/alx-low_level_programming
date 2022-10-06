@@ -1,6 +1,4 @@
-
-
-
+#include "main.h"
 
 /**
  * array_range - multiplies two digits
