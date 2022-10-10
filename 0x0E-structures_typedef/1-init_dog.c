@@ -1,5 +1,5 @@
 #include "dog.h"
-
+#include <stdlib.h>
 /**
  * init_dog - multiplies two digits
  * @d: 1st digit in the multiplication
