@@ -2,6 +2,27 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
+
+/**
+ * isonlydigit - checks if a string contains only digits
+ * @s: string to be checked
+ * Description: checks if a string contains only digit
+ * Return: 1 if string contains only didgit
+ *         0 if string has at lest one non-digit character
+ */
+int isonlydigit(char *s)
+{
+	while (*s != '\0')
+	{
+		if (*s < '0' || *s > '9')
+			return (0);
+		s++;
+	}
+	return (1);
+}
+
+
 /**
  * main - calls a callback function that prints a name
  * @argc: the name to be printed
@@ -22,6 +43,9 @@ int main(int argc, char *argv[])
 		printf("Error\n");
 		exit(98);
 	}
+
+	if (!isonlydigit(argv[1]) || !isonlydigit(argv[3]))
+		return (1);
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	ops = argv[2];
