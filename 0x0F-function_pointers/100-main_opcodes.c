@@ -59,4 +59,5 @@ int main(int argc, char *argv[])
 		else
 			printf("%02hhx", *c);
 	}
+	return (0);
 }
