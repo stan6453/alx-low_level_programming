@@ -1,7 +1,6 @@
 #include "3-calc.h"
 #include <string.h>
 
-
 /**
  * *get_op - returns a pointer to a math function,
  * based on the the specified arithmetic operator
@@ -28,6 +27,7 @@ int (*get_op_func(char *s))(int, int)
 	{
 		if (strcmp(s, ops[i].op) == 0)
 			return (ops[i].f);
+		i++;
 	}
 	return (NULL);
 }
