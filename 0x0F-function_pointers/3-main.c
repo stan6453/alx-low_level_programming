@@ -40,6 +40,6 @@ int main(int argc, char *argv[])
 	}
 
 	f = get_op_func(ops);
-	printf("%d", (*f)(num1, num2));
+	printf("%d\n", (*f)(num1, num2));
 	return (0);
 }
