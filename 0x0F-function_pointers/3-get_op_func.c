@@ -2,7 +2,7 @@
 #include <string.h>
 
 /**
- * *get_op - returns a pointer to a math function,
+ * *get_op_func - returns a pointer to a math function,
  * based on the the specified arithmetic operator
  * @s: an arithmetic operator
  * Description: returns a pointer to a math function,
@@ -20,7 +20,7 @@ int (*get_op_func(char *s))(int, int)
 		{NULL, NULL}
 	};
 
-	long unsigned int i;
+	unsigned long int i;
 
 	i = 0;
 	while (i < (sizeof(ops) / sizeof(op_t)))
