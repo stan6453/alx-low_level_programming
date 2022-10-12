@@ -3,13 +3,13 @@
 #include <stdio.h>
 
 
-int main (argc, *argv[])
+int main(argc, *argv[])
 {
 	int num1 = atio(argv[1]);
 	int num2 = atio(argv[3]);
 	char op = argv[2];
 
-	int (*f)(int,int) = get_op(&operator);
+	int (*f)(int, int) = get_op(&operator);
 
 	if (argc != 4)
 	{

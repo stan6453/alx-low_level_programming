@@ -1,5 +1,5 @@
 #include "3-calc.h"
-#include "strting.h"
+#include <string.h>
 
 
 /**
@@ -20,14 +20,14 @@ void *get_op(char *s)
 		{"%", op_mod},
 		{NULL, NULL}
 	};
-	
+
 	int i;
 
 	i = 0;
 	while (i < (sizeof(ops) / sizeof(op_t)))
 	{
-		if (srtcmp(s, ops[i].op) == 0)
-			return (ops[i].f)
+		if (strcmp(s, ops[i].op) == 0)
+			return (ops[i].f);
 	}
 	return (NULL);
 }
