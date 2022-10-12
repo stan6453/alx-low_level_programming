@@ -14,8 +14,17 @@ int main(int argc, char *argv[])
 	char *c;
 
 	if (argc != 2)
-		return (1);
+	{
+		printf("Error\n");
+		exit(1);
+	}
+
 	num = atoi(argv[1]);
+	if (num < 0)
+	{
+		printf("Error\n");
+		exit(2);
+	}
 
 	int (*fun)(int, char **) = main;
 	for (i = 0; i < num; i++)
