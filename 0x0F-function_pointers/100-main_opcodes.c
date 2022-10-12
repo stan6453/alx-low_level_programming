@@ -26,12 +26,12 @@ int main(int argc, char *argv[])
 		exit(2);
 	}
 
-	int (*fun)(int, char **) = main;
+	c = (char *) main;
 	for (i = 0; i < num; i++)
 	{
 		if (i != num - 1)
-			printf("%x ", fun++);
+			printf("%02hhx ", *(c++));
 		else
-			printf("%x", fun);
+			printf("%02hhx", *c);
 	}
 }
