@@ -10,7 +10,7 @@
  * based on the the specified maths symbol
  * Return: pointer to a fn
  */
-void *get_op(char *s)
+int (*get_op_func(char *s))(int, int)
 {
 	op_t ops[] = {
 		{"+", op_add},
@@ -21,7 +21,7 @@ void *get_op(char *s)
 		{NULL, NULL}
 	};
 
-	int i;
+	long unsigned int i;
 
 	i = 0;
 	while (i < (sizeof(ops) / sizeof(op_t)))
