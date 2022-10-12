@@ -46,7 +46,7 @@ int main(int argc, char *argv[])
 	if (!isonlydigit(argv[1]) || !isonlydigit(argv[3]))
 	{
 		printf("Error\n");
-		exit(101);
+		return (1);
 	}
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
