@@ -57,7 +57,7 @@ int main(int argc, char *argv[])
 		if (i != num - 1)
 			printf("%02hhx ", *(c++));
 		else
-			printf("%02hhx", *c);
+			printf("%02hhx\n", *c);
 	}
 	return (0);
 }
