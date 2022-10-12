@@ -19,5 +19,10 @@ int main(int argc, char *argv[])
 
 	int (*fun)(int, char **) = main;
 	for (i = 0; i < num; i++)
-		printf("%x ", fun++);
+	{
+		if (i != num - 1)
+			printf("%x ", fun++);
+		else
+			printf("%x", fun);
+	}
 }
