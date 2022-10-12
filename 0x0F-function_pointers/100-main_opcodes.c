@@ -14,10 +14,10 @@ int main(int argc, char *argv[])
 	char *c;
 
 	if (argc != 2)
-		return (NULL);
+		return (1);
 	num = atoi(argv[1]);
 
-	c = main;
+	int (*fun)(int, char **) = main;
 	for (i = 0; i < num; i++)
-		printf("%x", c++);
+		printf("%x ", fun++);
 }
