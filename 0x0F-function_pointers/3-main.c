@@ -43,8 +43,6 @@ int main(int argc, char *argv[])
 		exit(98);
 	}
 
-	if (!isonlydigit(argv[1]) || !isonlydigit(argv[3]))
-		return (1);
 	num1 = atoi(argv[1]);
 	num2 = atoi(argv[3]);
 	ops = argv[2];
