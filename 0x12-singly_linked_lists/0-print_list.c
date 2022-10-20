@@ -11,7 +11,7 @@ size_t print_list(const list_t *h)
 	const list_t *temp;
 	int count = 0;
 
-	if (h == NULL)
+	if (h == (void *)NULL)
 	{
 		printf("NULL");
 		return (0);
