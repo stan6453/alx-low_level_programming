@@ -22,7 +22,3 @@ main:
 	.cfi_def_cfa 7, 8
 	ret
 	.cfi_endproc
-.LFE0:
-	.size	main, .-main
-	.ident	"GCC: (Debian 11.3.0-5) 11.3.0"
-	.section	.note.GNU-stack,"",@progbits
