@@ -5,6 +5,14 @@
 #include <stdlib.h>
 #include <string.h>
 
+/**
+ * struct object - a structure
+ * @str: pointer to a string
+ * @len: length of string
+ * @next: pointer to a objeect structure
+ *
+ * Description: Longer description
+ */
 typedef struct object{
 	char *str;
 	int len;
