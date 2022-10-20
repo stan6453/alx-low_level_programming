@@ -13,7 +13,8 @@
  *
  * Description: Longer description
  */
-typedef struct object{
+typedef struct object
+{
 	char *str;
 	int len;
 	struct object *next;
