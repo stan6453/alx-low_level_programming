@@ -9,7 +9,7 @@
 size_t print_list(const list_t *h)
 {
 	const list_t *temp;
-	int count = 0;
+	size_t count = 0;
 
 	for (temp = h; temp != NULL; temp = temp->next)
 	{
