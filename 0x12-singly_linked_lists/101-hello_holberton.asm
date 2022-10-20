@@ -1,4 +1,3 @@
-main:
 .LFB0:
 	.cfi_startproc
 	pushq	%rbp
