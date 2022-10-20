@@ -1,8 +1,3 @@
-.LC0:
-	.string	"Hello, Holberton"
-	.text
-	.globl	main
-	.type	main, @function
 main:
 .LFB0:
 	.cfi_startproc
