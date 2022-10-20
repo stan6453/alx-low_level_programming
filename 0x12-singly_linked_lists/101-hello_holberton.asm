@@ -1,6 +1,3 @@
-	.file	"101-hello_holberton.c"
-	.text
-	.section	.rodata
 .LC0:
 	.string	"Hello, Holberton"
 	.text
