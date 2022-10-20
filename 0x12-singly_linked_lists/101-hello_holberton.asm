@@ -1,16 +1,12 @@
-.LFB0:
-	.cfi_startproc
-	pushq	%rbp
-	.cfi_def_cfa_offset 16
-	.cfi_offset 6, -16
-	movq	%rsp, %rbp
-	.cfi_def_cfa_register 6
-	leaq	.LC0(%rip), %rax
-	movq	%rax, %rdi
-	call	puts@PLT
-	movl	$0, %eax
-	popq	%rbp
-	.cfi_def_cfa 7, 8
-	ret
-	.cfi_endproc
-
+0000000000001139 <main>:
+    1139:       55                      push   rbp
+    113a:       48 89 e5                mov    rbp,rsp
+    113d:       48 8d 05 c0 0e 00 00    lea    rax,[rip+0xec0]        # 2004 <_IO_stdin_used+0x4>
+    1144:       48 89 c7                mov    rdi,rax
+    1147:       e8 e4 fe ff ff          call   1030 <puts@plt>
+    114c:       b8 00 00 00 00          mov    eax,0x0
+    1151:       5d                      pop    rbp
+    1152:       c3                      ret
+    1153:       66 2e 0f 1f 84 00 00    cs nop WORD PTR [rax+rax*1+0x0]
+    115a:       00 00 00 
+    115d:       0f 1f 00                nop    DWORD PTR [rax]
