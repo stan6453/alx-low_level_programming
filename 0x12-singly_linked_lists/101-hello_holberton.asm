@@ -3,23 +3,18 @@
 ; Author: Stanley Ezechukwu
 ; Date:   Fri, Oct 21, 2022
 
-global _start
+SECTION .data
+msg:	db "Hello, Holberton", 0
+fmt:	db "%s", 10, 0
 
-section .text:
+	SECTION .text
+	extern printf
+	global main
+main:
+	mov esi, msg
+	mov edi, fmt
+	mov eax, 0
+	call printf
 
-_start:
-	mov eax, 0x4		; use the write syscall
-	mov ebx, 1		; use stdout as the file descriptor
-	mov ecx, message	; use the message sa the buffer
-	mov edx, message_length	; supply the message length
-	int 0x80		; invoke the syscall
-
-	; now gracefully exit
-
-	mov eax, 0x1
-	mov ebx, 0
-	int 0x80
-
-section .data:
-	message: db "Hello, Holberton", 0xA
-	message_length equ $-message
+	mov eax, 0
+	ret
