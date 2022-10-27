@@ -8,7 +8,7 @@ void print_binary_helper(unsigned long int n, int ishead);
  */
 void print_binary(unsigned long int n)
 {
-	print_binary_helper(n,1);
+	print_binary_helper(n, 1);
 }
 
 
