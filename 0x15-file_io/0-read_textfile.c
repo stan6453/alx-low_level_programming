@@ -8,20 +8,24 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, n, buf[letters];
+	int fd, n, total = 0, buf[BUFSIZE];
 
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
+
 	n = read(fd, buf, letters);
-	if (n == -1)
-		return (0);
-
-	if (write(1, buf, n) == -1)
-		return (0);
-
+	while (n != 0)
+	{
+		if (n == -1)
+			return (0);
+		if (write(1, buf, n) == -1)
+			return (0);
+		total += n;
+		n = read(fd, buf, letters);
+	}
 	close(fd);
-	return (n);
+	return (total);
 }
