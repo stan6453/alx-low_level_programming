@@ -1,5 +1,8 @@
 #include "main.h"
 
+int openfile1(char *);
+int openfile2(char *);
+
 int main(int argc, char *argv[])
 {
 	int fd1, fd2, n, buf[BUFSIZE];
