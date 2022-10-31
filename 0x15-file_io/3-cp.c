@@ -4,6 +4,12 @@ int openfile1(char *);
 int openfile2(char *);
 void closefile(int);
 
+/**
+ * main - copies the contents of one file to another
+ * @argc: argument count
+ * @argv: array of string arguments
+ * Return: error code varies. 1 if successful
+ */
 int main(int argc, char *argv[])
 {
 	int fd1, fd2, n, buf[BUFSIZE];
@@ -30,7 +36,6 @@ int main(int argc, char *argv[])
 	return (1);
 }
 
-
 /**
  * openfile1 - open file1
  * @filename: the name of the file
@@ -47,7 +52,6 @@ int openfile1(char *filename)
 	}
 	return (fd);
 }
-
 
 /**
  * openfile2 - open file2
