@@ -59,5 +59,5 @@ int openfile2(char *filename)
 			dprintf(2, "Error: Can't write to %s\n", filename);
 			exit(99);
 		}
-	return (filename);
+	return (fd);
 }
