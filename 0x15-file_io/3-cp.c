@@ -74,7 +74,7 @@ int openfile2(char *filename)
 
 	if (fd == -1)
 	{
-		fd = open(filename, O_CREAT | O_WRONLY, 0664);
+		fd = open(filename, O_CREAT | O_WRONLY, S_IRUSR | S_IWUSR | S_IRGRP | S_IWGRP | S_IROTH);
 		if (fd == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", filename);
