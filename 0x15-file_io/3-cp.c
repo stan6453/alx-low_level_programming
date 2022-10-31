@@ -2,7 +2,7 @@
 
 int openfile1(char *);
 int openfile2(char *);
-void closefile(int); 
+void closefile(int);
 
 int main(int argc, char *argv[])
 {
@@ -30,6 +30,12 @@ int main(int argc, char *argv[])
 	return (1);
 }
 
+
+/**
+ * openfile1 - open file1
+ * @filename: the name of the file
+ * Return: file descriptor
+ */
 int openfile1(char *filename)
 {
 	int fd = open(filename, O_RDONLY);
@@ -42,19 +48,33 @@ int openfile1(char *filename)
 	return (fd);
 }
 
+
+/**
+ * openfile2 - open file2
+ * @filename: the name of the file
+ * Return: file descriptor
+ */
 int openfile2(char *filename)
 {
-	int fd = open(filename, O_WRONLY); 
+	int fd = open(filename, O_WRONLY);
 
 	if (fd == -1)
-		if ((fd = open(filename, O_CREAT | O_WRONLY, 0664)) == -1)
+	{
+		fd = open(filename, O_CREAT | O_WRONLY, 0664);
+		if (fd == -1)
 		{
 			dprintf(2, "Error: Can't write to %s\n", filename);
 			exit(99);
 		}
+	}
 	return (fd);
 }
 
+
+/**
+ * closefile - close a file
+ * @fd: file descriptor to close
+ */
 void closefile(int fd)
 {
 	if (close(fd) == -1)
