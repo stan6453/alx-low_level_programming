@@ -22,6 +22,11 @@ int main(int argc, char *argv[])
 	fd1 = openfile1(argv[1]);
 	fd2 = openfile2(argv[2]);
 	n = read(fd1, buf, BUFSIZE);
+	if (n == -1)
+	{
+		dprintf(2, "Error: Can't read from file %s\n", filename);
+		exit(98);
+	}
 	while (n > 0)
 	{
 		if (write(fd2, buf, n) != n)
@@ -30,6 +35,11 @@ int main(int argc, char *argv[])
 			exit(99);
 		}
 		n = read(fd1, buf, BUFSIZE);
+		if (n == -1)
+		{
+			dprintf(2, "Error: Can't read from file %s\n", filename);
+			exit(98);
+		}
 	}
 	closefile(fd1);
 	closefile(fd2);
