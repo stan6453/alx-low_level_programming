@@ -43,7 +43,7 @@ int main(int argc, char *argv[])
 	}
 	closefile(fd1);
 	closefile(fd2);
-	return (1);
+	return (0);
 }
 
 /**
