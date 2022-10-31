@@ -2,6 +2,7 @@
 
 int openfile1(char *);
 int openfile2(char *);
+void closefile(fd); 
 
 int main(int argc, char *argv[])
 {
@@ -24,16 +25,8 @@ int main(int argc, char *argv[])
 		}
 		n = read(fd1, buf, BUFSIZE);
 	}
-	if (close(fd1) == -1)
-	{
-		dprintf(2, "Error: Can't close fd %d\n", fd1);
-		exit(100);
-	}
-	if (close(fd2) == -1)
-	{
-		dprintf(2, "Error: Can't close fd %d\n", fd2);
-		exit(100);
-	}
+	closefile(fd1);
+	closefile(fd2);
 	return (1);
 }
 
@@ -60,4 +53,13 @@ int openfile2(char *filename)
 			exit(99);
 		}
 	return (fd);
+}
+
+void closefile(int fd)
+{
+	if (close(fd) == -1)
+	{
+		dprintf(2, "Error: Can't close fd %d\n", fd);
+		exit(100);
+	}
 }
