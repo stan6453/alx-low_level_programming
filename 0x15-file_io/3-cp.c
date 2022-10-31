@@ -24,7 +24,7 @@ int main(int argc, char *argv[])
 	n = read(fd1, buf, BUFSIZE);
 	if (n == -1)
 	{
-		dprintf(2, "Error: Can't read from file %s\n", filename);
+		dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
 	while (n > 0)
@@ -37,7 +37,7 @@ int main(int argc, char *argv[])
 		n = read(fd1, buf, BUFSIZE);
 		if (n == -1)
 		{
-			dprintf(2, "Error: Can't read from file %s\n", filename);
+			dprintf(2, "Error: Can't read from file %s\n", argv[1]);
 			exit(98);
 		}
 	}
