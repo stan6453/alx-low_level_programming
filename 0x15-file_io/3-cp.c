@@ -29,7 +29,7 @@ int main(int argc, char *argv[])
 	}
 	while (n > 0)
 	{
-		if (write(fd2, buf, n) == -1)
+		if (write(fd2, buf, n) != n)
 		{
 			dprintf(2, "Error: Can't write to %s\n", argv[2]);
 			exit(99);
