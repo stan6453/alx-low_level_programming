@@ -2,7 +2,7 @@
 
 int openfile1(char *);
 int openfile2(char *);
-void closefile(fd); 
+void closefile(int); 
 
 int main(int argc, char *argv[])
 {
