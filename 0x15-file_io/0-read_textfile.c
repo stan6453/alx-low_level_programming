@@ -8,21 +8,19 @@
  */
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	int fd, n, total, buf[BUFSIZE];
+	int fd, n, buf[BUFSIZE];
 
 	if (filename == NULL)
 		return (0);
 	fd = open(filename, O_RDONLY);
 	if (fd == -1)
 		return (0);
-
 	n = read(fd, buf, letters);
 	if (n == -1)
 		return (0);
 
 	if (write(1, buf, n) == -1)
 		return (0);
-
 	close(fd);
 	return (n);
 }
