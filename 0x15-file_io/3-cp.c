@@ -70,7 +70,7 @@ int openfile1(char *filename)
  */
 int openfile2(char *filename)
 {
-	int fd = open(filename, O_WRONLY);
+	int fd = open(filename, O_WRONLY | O_TRUNC);
 
 	if (fd == -1)
 	{
