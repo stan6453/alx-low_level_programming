@@ -9,20 +9,20 @@ int _str_len(char *str);
  * Return: 1 on success, -1 on failure 
  * (file can not be created, file can not be written, write “fails”, etc…)
  */
-int create_file(const char *filename, char *text_content);
+int create_file(const char *filename, char *text_content)
 {
 	int fd, n;
 
 	if (filename == NULL || text_content == NULL)
 		return (0);
-	if ((fd = open(filename, O_CREAT | O_WRONLY)) == -1)
+	fd = open(filename, O_CREAT | O_WRONLY, 0600);
+	if (fd == -1)
 		return (0);
 	n = _str_len(text_content);
 	if (write(fd, text_content, n) == -1)
 		 return (0);
 	close(fd);
 	return (1);
-
 }
 
 
@@ -37,7 +37,7 @@ int _str_len(char *str)
 {
 	int i;
 
-	if(str == NULL)
+	if (str == NULL)
 		return (0);
 
 	for (i = 0; str[i] != '\0'; i++)
