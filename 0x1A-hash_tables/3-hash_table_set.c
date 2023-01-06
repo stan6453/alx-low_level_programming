@@ -5,7 +5,8 @@
  * hash_table_set - adds an element to the hash table.
  * @ht: the hash table to add or update the key/value to
  * @key:  the key. key can not be an empty string
- * @value: the value associated with the key. value must be duplicated. value can be an empty string
+ * @value: the value associated with the key. value must
+ * be duplicated. value can be an empty string
  * Return: 1 if it succeeded, 0 otherwise
  * Description: adds an element to the hash table.
  * In case of collision, add the new node at the beginning of the list
