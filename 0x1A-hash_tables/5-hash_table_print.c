@@ -9,7 +9,6 @@
 void hash_table_print(const hash_table_t *ht)
 {
 	unsigned long int i;
-	int has_next = 0;
 	int first_item = 1;
 
 	if (ht == NULL)
@@ -22,13 +21,11 @@ void hash_table_print(const hash_table_t *ht)
 	{
 		if (ht->array[i] != NULL)
 		{
-			has_next = 1;
-			if (has_next && !first_item)
+			if (!first_item)
 				printf(", ");
 			printf("'%s':", ht->array[i]->key);
 			printf(" '%s'", ht->array[i]->value);
 			first_item = 0;
-			has_next = 0;
 		}
 	}
 
