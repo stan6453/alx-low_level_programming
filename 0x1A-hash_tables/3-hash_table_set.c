@@ -1,6 +1,5 @@
 #include "hash_tables.h"
 
-void free_node(hash_node_t *node);
 /**
  * hash_table_set - adds an element to the hash table.
  * @ht: the hash table to add or update the key/value to
