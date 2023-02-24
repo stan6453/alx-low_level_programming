@@ -7,7 +7,7 @@ def island_perimeter(grid):
     returns the perimeter of the island described in grid
     """
     y1 = y2 = x2 = 0
-    x1 = 1000
+    x1 = 100
     for ycount, y in enumerate(grid):
         if y1 == 0 and 1 in y:
             y1 = ycount + 1
@@ -21,7 +21,7 @@ def island_perimeter(grid):
                 if x1 > xindex:
                     x1 = xindex + 1
 
-    if x1 == 1000:
+    if x1 == 100:
         x1 = 0
 
     ylength = (y2 - y1) + 1
