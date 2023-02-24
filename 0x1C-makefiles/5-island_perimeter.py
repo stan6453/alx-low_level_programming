@@ -21,7 +21,7 @@ def island_perimeter(grid):
                 if x1 > xindex:
                     x1 = xindex + 1
 
-    if x1 == 100:
+    if x1 == 1000:
         x1 = 0
 
     ylength = (y2 - y1) + 1
