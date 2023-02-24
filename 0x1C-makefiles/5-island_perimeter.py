@@ -6,14 +6,12 @@ def island_perimeter(grid):
     """
     returns the perimeter of the island described in grid
     """
+    y1, y2, x2 = 0
+    x1 = 100
     if type(grid) is not list:
         return 0
     if type(grid[0]) is not list:
         return 0
-    y1 = 0
-    y2 = 0
-    x1 = 100
-    x2 = 0
     for ycount, y in enumerate(grid):
         if y1 == 0 and 1 in y:
             y1 = ycount + 1
