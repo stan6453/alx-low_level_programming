@@ -18,7 +18,7 @@ def island_perimeter(grid):
 
         for xindex, x in enumerate(y):
             if x == 1:
-                if x2 < xindex:
+                if x2 <= xindex:
                     x2 = xindex + 1
                 if x1 > xindex:
                     x1 = xindex + 1
