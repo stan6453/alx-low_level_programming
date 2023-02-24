@@ -6,6 +6,8 @@ def island_perimeter(grid):
     """
     returns the perimeter of the island described in grid
     """
+    if type(grid) is not list:
+        return 0
     if type(grid[0]) is not list:
         return 0
     y1 = 0

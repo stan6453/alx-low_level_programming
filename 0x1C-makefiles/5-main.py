@@ -5,6 +5,5 @@
 island_perimeter = __import__('5-island_perimeter').island_perimeter
 
 if __name__ == "__main__":
-    grid = [
-    0, 1]
+    grid = 2
     print(island_perimeter(grid))
