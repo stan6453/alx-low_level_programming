@@ -33,15 +33,21 @@ int binary_search_helper(int *array, size_t size, int value, size_t index_offset
 	if (array == NULL)
 		return (-1);
 
+	printf("size: %ld ", size);
 	printf("Searching in array: ");
 	printarray(array, size);
 
 	mid_index = (size - 1) / 2;
 	if (array[mid_index] == value)
+	{
 		return (mid_index + index_offset);
+	}
+	else if (size == 1){
+		return (-1);
+	}
 	else if (array[mid_index] < value)
 	{
-		new_size = (size % 2) == 0 ? (size - 1) / 2 : size / 2;
+		new_size = (size % 2) == 0 ? size / 2 : size / 2;
 		return (binary_search_helper((array + mid_index + 1), new_size, value, index_offset + mid_index + 1));
 	}
 	else
