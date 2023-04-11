@@ -1,5 +1,6 @@
 #include "search_algos.h"
-int interpolation_search_helper(int *array, size_t low, size_t high, int value);
+int interpolation_search_helper(int *array, size_t low,
+								size_t high, int value);
 
 /**
  * interpolation_search - searches for a value in a sorted array of integers
@@ -16,8 +17,8 @@ int interpolation_search(int *array, size_t size, int value)
 }
 
 /**
- * interpolation_search_helper - searches for a value in a sorted array of integers
- * using the Interpolation search algorithm
+ * interpolation_search_helper - searches for a value in a
+ * sorted array of integers using the Interpolation search algorithm
  * @array: pointer to the first element of the array to search in
  * @low: index of the left-hand-side pointer
  * @high: index of the right-hand-side-pointer
@@ -27,12 +28,13 @@ int interpolation_search(int *array, size_t size, int value)
  */
 int interpolation_search_helper(int *array, size_t low, size_t high, int value)
 {
-	int pos;
+	int pos, why;
 
 	if (array == NULL)
 		return (-1);
 
-	pos = low + (((double)(high - low) / (array[high] - array[low])) * (value - array[low]));
+	why = (value - array[low]);
+	pos = low + (((double)(high - low) / (array[high] - array[low])) * why);
 
 	if ((size_t)pos > high)
 	{
