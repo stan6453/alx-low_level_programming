@@ -17,7 +17,7 @@ int binary_search(int *array, size_t size, int value)
 }
 
 /**
- * binary_search - searches for a value in a sorted array of integers
+ * binary_search_helper - searches for a value in a sorted array of integers
  * using the Binary search algorithm
  * @array: pointer to the first element of the array to search in
  * @size: number of elements in array
